@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+/*@media screen (min-width: 1024)*/
+
+.boxes {
+    height: 100vh;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.titulo__produtos {
+    border-radius: 400px;
+    background-color: #22D4FD;
+    color: #000000;
+    text-align: center;
+    padding: 5px 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+[data-anchor="botao_produtos"] {
+    background-color: #22D4FD;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s ease-in-out;
+    display: inline-block;
+}
+
+[data-anchor="botao_produtos"]:hover {
+    transform: scale(1.1);
+    background-color: darkcyan;
+}
+
+
+.produtos {
+    height: 100vh;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.produtos_itens {
+    flex: 44.44%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    justify-items: center;
+    display: grid;
+    gap: 40px;
+    flex-direction: column;
+
+
+}
+
+[data-img="tamanho__imagem__produtos"]{
+    width: 300px;
+    transition: .2s ease-in-out;
+    display: grid;
+}
+[data-img="tamanho__imagem__produtos"]:hover {
+    transform: scale(1.5);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+[data-button="compra"] {
+    background-color: #22D4FD;
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    display: grid;
+}
+
+
+figcaption {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+[data-button="compra"]:hover {
+    transform: scale(1.5);
+    background-color: darkcyan;
+}
+
+aside {
+    display: grid;
+    width: 60%;
+    gap: 200px;
+}
+
+#banners {
+    height: 100%;
+    width: 350px;
+}
